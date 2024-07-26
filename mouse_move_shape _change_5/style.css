@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.circle{
+    /* border-radius: 50%; */
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    border: 3px solid #00000081;
+    transform: translate(-50% ,-50%);
+    position: absolute;
+    transition: transfrom cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 99999;
+}
+
+.circle0{
+    height: 10px;
+    width: 10px;
+}
+
+.circle1{
+    height: 20px;
+    width: 20px;
+}
+
+.circle2{
+    height: 30px;
+    width: 30px;
+}
+
+.circle3{
+    height: 40px;
+    width: 40px;
+}
+
+.circle4{
+    height: 50px;
+    width: 50px;
+    
+}
+
+
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    padding: 50px 100px;
+    background-color: rgba(225, 8, 8, 0.842);
+    pointer-events: none;
+    
+}
+
+.hero{ 
+   /* height: 160px; */
+   width: 220px;
+   /* border: 2px solid yellow; */
+   display: flex;
+}
+
+.lrow {
+    width: 50%;
+}
+
+.lrow  a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.playbtn{
+    display: flex;
+    width: 25%;
+    margin-top: 15px;
+    align-items: center;
+    color: white;
+}
+
+.playbtn i {
+   font-size: 20px;
+}
+
+.playbtn p{
+    font-size: 10px;
+    font-family: "Montserrat";
+ margin-left:10px ;
+ /* text-align: center; */
+ font-weight: 300;
+}
+
+.hero1{
+    height: 80%;
+    width: 100%;
+    /* background: #00000085; */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero1 img{
+    height: 100%;
+}
+
+.hero1 h1{
+    pointer-events: none;
+    /* margin-top: 40px; */
+    position: absolute;
+    font-size: 22vw;
+    font-weight: 300;
+    color: azure;
+    font-family: 'Merriweather', serif;
+    z-index: 999;
+}
+
+
+.hero1 h1 .line{
+    display: inline-block;
+   height: 12px;
+   width: 150px;
+   background: #ffffff;
+   vertical-align: middle;
+   border-radius: 10px;
+}
+

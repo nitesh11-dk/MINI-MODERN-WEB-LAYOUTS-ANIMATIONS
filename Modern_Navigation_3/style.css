@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.main_main{
+    height: 100vh;
+    width: 100%;
+    background-color: #f0efefce;;
+    perspective: 500px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #f0efefe3;
+    /* transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 2s; */
+    transition: all ease-in-out 0.7s;
+    box-shadow: 1px 2px 4px rgba(103, 101, 103, 0.447);
+}
+
+nav{
+    background-color: #ebe8e8d8;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    padding: 7px 20px;
+
+
+}
+nav i {
+    height: 60px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.headings{
+    text-align: center;
+    margin-top: 100px;
+}
+.headings h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.elems{
+    display:flex ;
+    margin-top: 120px;
+    width: 100%;
+    padding: 0 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem{
+    height: 340px;
+    width: 21%;
+    background-color: #e6e5e5d8;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.elem .pic{
+    height: 230px ;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    }
+
+    .elem:nth-child(1) .pic{
+        background-image: url(https://images.unsplash.com/photo-1506543730435-e2c1d4553a84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D);
+    }
+    .elem:nth-child(2) .pic{
+        background-image: url(https://images.unsplash.com/photo-1519393085459-be21f89585f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8);
+    }
+    
+
+    .elem:nth-child(3) .pic{
+        background-image: url(https://images.unsplash.com/photo-1542728928-0011f81446e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8);
+    }
+    .elem:nth-child(4) .pic{
+        background-image: url(https://images.unsplash.com/photo-1504204267155-aaad8e81290d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8);
+    }
+    
+
+
+    
+
+    .elem .cntnt{
+        margin: 15px;
+    }
+
+    .elem .cntnt  h4 span{
+        font-size: 20px;
+        margin-left: 6px;
+    }
+    .elem .cntnt  p{
+        margin-top: 4px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+
+
+
+    /*  SIde NAV BAR */
+    .main_box{
+        position: absolute;
+        height: 60vh;
+        top: 43%;
+        left: -300px;
+        transform: translate(-50% , -50%); 
+        transition: all ease-in-out 0.7s;
+    }
+    
+    #close{
+        margin-left: 10px;
+    }
+    
+    .sidebar_menu{
+        position: fixed;
+        height: 60vh;
+        width: 265px;
+        border: 1px solid #ccc;
+        border-top-right-radius:20px ;
+        border-bottom-right-radius:20px ;
+        box-shadow: 0 2px 4px rgba(62, 61, 62, 0.6);
+       
+    }
+    
+    .sidebar_menu .logo {
+        position: absolute;
+        width: 100%;
+        line-height: 60px;
+        height: 60px;
+        text-transform: uppercase;
+        transform: translateX(-12px);
+    }
+    
+    .sidebar_menu .logo a{
+        position: absolute;
+        left: 50px;
+        color: black !important;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    
+    .sidebar_menu .menu {
+        position: absolute;
+        top: 80px;
+    }
+    
+    .sidebar_menu .menu li{
+        padding: 14px 20px ;
+        width: 300px;
+    }
+    
+    .sidebar_menu .menu i,a{
+        color: black !important; 
+        text-decoration: none;
+        font-size: 20px;
+    
+    }
+    
+
+
+    .sidebar_menu .menu i{
+        padding-right: 14px;
+    }
+    
+    .sidebar_menu .social_media{
+        position: absolute;
+        left: 50px;
+        bottom: 20px;
+    }
+
+    .sidebar_menu .social_media i{
+        color: rgb(0, 0, 0);
+        padding: 4px;
+        border-radius: 5px;
+    }
+    
+ 
+   
+   

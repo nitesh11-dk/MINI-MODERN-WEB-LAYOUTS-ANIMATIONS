@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Merriweather', serif; */
+    font-family: "silk serif";
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.circle{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.main{
+    width: 100%;
+}
+.bgout{
+    height: 100vh;
+    width: 100%;
+       background: #000;
+       position: fixed;
+       z-index: -10;
+}
+.bgin{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.07;
+    background-image: url(psd-transparent-plastic-bag-film-wrap_1409-3635.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -9;
+}
+
+.main_body{
+    height: 58h;
+    /* background: #be9494; */
+}
+.main_body nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+
+.main_body nav img{
+  height: 60px;
+  width: 130px;
+}
+
+.main_body nav .links{
+    display: flex;
+    align-items: center;
+}
+.main_body nav .links img{
+    height: 30px;
+   
+}
+
+.main_body nav .links a {
+   text-decoration: none;
+   color: azure;
+   margin-right: 15px;
+   font-size: 13px;
+   
+}
+.main_body>h1{
+    font-size: 75px;
+    font-weight: 100;
+    text-align: center;
+    width: 82%;
+    margin:  80px auto ;
+    color: azure;
+}
+
+.down{
+    height: 100vh;
+    width: 100%;
+}
+.down .image{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+}
+.down .image img{
+    margin-top: 80px;
+ height: 600px;
+}
+.contct{
+    margin: 14px 0;
+    color: azure;
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contct p{
+    width: 38%;
+    letter-spacing: 3px;
+    line-height: 30px;
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 45px;  
+}
+.contct img{
+    transform: translateY(-100px);
+    opacity: 0;
+    margin-bottom: 120px;
+}

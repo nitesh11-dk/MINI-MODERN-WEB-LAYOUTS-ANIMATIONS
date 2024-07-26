@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    /* height: 100%; */
+    background: #c0c0c0;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    width: 200vh;
+    /* background: #000; */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; 
+    transform: translate(0% , -50%) rotate(100deg) ;  
+    left: -100vh;
+    border: 2px solid #b8b7b7;
+
+}
+
+.stripe{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    left: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 70px;
+    /* background: #759300; */
+    transform-origin: 0% 50%;  }
+
+.str1{
+    transform:translate(0, -50%) rotate(-20deg);
+}
+
+.str2{
+    transform:translate(0, -50%) rotate(-10deg);
+}
+
+.str4{
+    transform:translate(0, -50%) rotate(10deg);
+}
+
+.str5{
+    transform:translate(0, -50%) rotate(20deg);
+}
+
+.first{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background-color: green; */
+}
+
+.sec{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(7, 20, 56); */
+    padding-left: 30px;
+    opacity: 0.4;
+}
+.sec h4 {
+    font-size: 2vw;
+}
+.sec h6 {
+    font-size: 1vw;
+    opacity: 0.6;
+}
+
+.smcircle{
+    height: 0.6vw;
+    width: 0.6vw;
+    border-radius: 50%;
+    background: #747474;
+    position: absolute;
+    right: -0.31vw;
+    transform: translate(0 , -50%);
+    top: 50%;
+}
+
+.panel{
+    height: 27%;
+    width: 3%;
+    /* background: #785858; */
+    position: absolute;
+    top:50% ;
+    right: 4%;
+    transform: translate(0 , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel .mncircle{
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    opacity: 0.5;
+    /* background: #000000; */
+    cursor: pointer;
+    background: rgb(135, 135, 135) ;
+}
